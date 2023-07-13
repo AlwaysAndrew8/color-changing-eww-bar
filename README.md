@@ -27,13 +27,13 @@ Example:
 ```
 
 # Pre-requisites:
-- [https://github.com/dylanaraps/pywal](pywal)
-- [https://github.com/elkowar/eww](eww)
-- [https://github.com/alsa-project](ALSA)^1
-- [https://github.com/systemd/systemd](systemd)^2
-- [https://github.com/swaywm/swaylock](swaylock)^3
-- [https://github.com/hyprwm/Hyprland](Hyprland)^4
-- [https://github.com/altdesktop/playerctl](playerctl)^5
+- [pywal](https://github.com/dylanaraps/pywal)
+- [eww](https://github.com/elkowar/eww)
+- [ALSA](https://github.com/alsa-project)^1
+- [systemd](https://github.com/systemd/systemd)^2
+- [swaylock](https://github.com/swaywm/swaylock)^3
+- [Hyprland](https://github.com/hyprwm/Hyprland)^4
+- [playerctl](https://github.com/altdesktop/playerctl)^5
   (That should be it, will add if I recall any)
 
 # Installation
@@ -88,4 +88,4 @@ monitor=,addreserved,0,0,91,0
 ```
 
 # Credit
-Thank you to [https://github.com/elkowar](elkowar) for making eww, [https://github.com/okklol/eww-bar](okklol) for what I started with as my eww bar,  [https://github.com/hyprwm](the%20Hypr%20Development%20Team): [https://github.com/vaxerski](Vaxry), [https://github.com/fufexan](Fufexan), [https://github.com/ThatOneCalculator](ThatOneCalculator) - and [https://github.com/hyprwm/Hyprland/graphs/contributors](all%20contributors) for making/contributing to the really awesome and cool desktop environment hyprland.
+Thank you to [elkowar](https://github.com/elkowar) for making eww, [okklol](https://github.com/okklol/eww-bar) for what I started with as my eww bar,  [the Hypr Development Team](https://github.com/hyprwm): [Vaxry](https://github.com/vaxerski), [Fufexan](https://github.com/fufexan), [ThatOneCalculator](https://github.com/ThatOneCalculator) - and [all contributors](https://github.com/hyprwm/Hyprland/graphs/contributors) for making/contributing to the really awesome and cool desktop environment hyprland.
