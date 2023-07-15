@@ -10,7 +10,7 @@ I use the Hyprland Desktop environment. This is an eww bar that changes color to
 
   Full screen usage makes it so that the eww bar will surface on top due to it reloading the colors for the wallpaper, I'm unsure if this is possible to change, but switching workspaces will put it back down beneath. I rarely use full-screen (like actual full-screen, not tiled) and when it does pop up, it doesn't usually block anything important in the games I play. But be warned.
   
-  This isn't an issue if you change wallpapers only when the computer starts up, and never when in full-screen, as then the eww-bar never reloads while on. Actually, after writing this, I may just adjust my personal wallpapers to only change on computer startup... that would be smart. This would negate the need for my systemd/Timer :D
+  This isn't an issue if you change wallpapers only when the computer starts up, and never when in full-screen, as then the eww-bar never reloads while on. Actually, after writing this, I may just adjust my personal wallpapers to only change on computer startup... that would be smart. This would negate the need for my systemd/Timer :D EDIT: Ended up just changing wallpaper on startup. Works nicely.
 </details>
 
 <details>
@@ -55,8 +55,23 @@ If you don't use...
 </details>
 
 # Installation
-(will add when I put files in)
+You can git clone this by typing
+```
+git clone "https://github.com/AlwaysAndrew8/color-changing-eww-bar.git"
+```
 
+Please make sure to move files to proper locations for everything to work, or change the directories.
+
+I place my change_wallpaper.service and my change_wallpaper.timer in /home/$USER/.config/systemd/user/. If you do this, make sure to start it by typing:
+```
+sudo systemctl enable change_wallpaper.timer
+```
+and
+```
+sudo systemctl start change_wallpaper.timer
+```
+You may have to do this with change_wallpaper.service as well, I no longer use this timer so it has been a while. I simply start my change_wallpaper.sh script on startup.
+Make sure to restart the daemon if you alter the files. It defaults to changing the wallpaper every hour.
 
 # Guide
 
@@ -85,7 +100,7 @@ Use your package manager
   
   <summary>4. Use hyprland.conf, crontab, or something to have it so that change_wallpaper.sh runs on startup.</summary>
   
-  I use hyprland.conf. Basically, I just slapped ```exec = /home/$USER/change_wallpaper.sh``` in my file.
+  I use hyprland.conf. Basically, I just slapped exec = /home/$USER/change_wallpaper.sh in my file.
 </details>
 
 <details>
@@ -95,7 +110,7 @@ Use your package manager
 
 change_wallpaper.sh just changes the wallpaper to any wallpapers located in the /home/my-user/Downloads/Wallpapers directory. You should adjust this location to where you keep your wallpapers, or it won't work.
 
-systemd/timers - I use Arch Linux, and so, instead of crontab, I opted to use systemd/timers. They are called change_wallpaper.timer and change_wallpaper.service. I have it set to change the wallpaper every 15 minutes, but if you want it changed in a shorter time, go to the file change_wallpaper.timer, and change "OnUnitActivateSec=15min" to "OnUnitActivateSec=time-you-want."
+systemd/timers - I use Arch Linux, and so, instead of crontab, I opted to use systemd/timers. They are called change_wallpaper.timer and change_wallpaper.service. I have it set to change the wallpaper every 60 minutes, but if you want it changed in a shorter time, go to the file change_wallpaper.timer, and change "OnUnitActivateSec=60min" to "OnUnitActivateSec=time-you-want."
 </details>
 
 # Reserve Space (Hyprland)
