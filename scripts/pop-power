@@ -1,0 +1,27 @@
+#!/bin/sh
+
+power() {
+    LOCK_FILE_POWER="$HOME/.cache/eww-power.lock"
+
+run() {
+    	cd /home/$USER/eww/target/release/
+	./eww open powermenu -c /home/$USER/.config/eww/
+	cd
+}
+
+# Open widgets
+if [[ ! -f "$LOCK_FILE_POWER" ]]; then
+    	cd /home/$USER/eww/target/release/	
+	./eww close powermenu -c /home/$USER/.config/eww/
+	cd
+    touch "$LOCK_FILE_POWER"
+    run && echo "ok good!"
+elif [[ -f "$LOCK_FILE_POWER" ]]; then
+    	cd /home/$USER/eww/target/release/
+	./eww close powermenu -c /home/$USER/.config/eww/
+	cd
+    rm "$LOCK_FILE_POWER" && echo "closed"
+fi
+}
+
+power

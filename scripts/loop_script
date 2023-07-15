@@ -1,0 +1,21 @@
+#!/bin/bash
+
+loopy ()
+{
+    if [ $(playerctl loop) = "None" ]; then
+        echo "🔁"
+    elif [ $(playerctl loop) = "Playlist" ]; then
+        echo ""
+    else
+        echo ""
+    fi
+}
+
+if [[ "$1" == "--loop" ]]; then
+    loopy
+elif [ $(playerctl loop) = "None" ]; then
+    playerctl loop playlist
+elif [ $(playerctl loop) = "Playlist" ]; then
+    playerctl loop none
+
+fi

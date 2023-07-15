@@ -1,0 +1,22 @@
+#!/bin/sh
+
+
+get_song ()
+{
+    song_title=$(playerctl metadata title)
+    if [ -z $(playerctl metadata title) ]; then
+	echo "nothing!"
+    else
+	if [ ${#song_title} -gt 28 ]; then
+            echo "${song_title:0:28}..."  # Add ellipsis if length is greater than 30
+        else
+            echo "$song_title"  # Else, print the entire song title
+        fi
+    fi
+}
+
+
+
+if [[ "$1" == "--song" ]]; then
+	get_song
+fi

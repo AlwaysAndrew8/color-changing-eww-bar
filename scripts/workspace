@@ -1,0 +1,188 @@
+#!/bin/sh
+
+# Change icons here
+
+workspaces() {
+
+ws1="1"
+ws2="2"
+ws3="3"
+ws4="4"
+ws5="5"
+ws6="6"
+ws7="7"
+ws8="8"
+ws9="9"
+
+
+# Unoccupied
+un="0"
+
+
+# check if Occupied
+o1=$(hyprctl workspaces | grep -q "workspace ID $ws1" && echo "$ws1")
+o2=$(hyprctl workspaces | grep -q "workspace ID $ws2" && echo "$ws2")
+o3=$(hyprctl workspaces | grep -q "workspace ID $ws3" && echo "$ws3")
+o4=$(hyprctl workspaces | grep -q "workspace ID $ws4" && echo "$ws4")
+o5=$(hyprctl workspaces | grep -q "workspace ID $ws5" && echo "$ws5")
+o6=$(hyprctl workspaces | grep -q "workspace ID $ws6" && echo "$ws6")
+o7=$(hyprctl workspaces | grep -q "workspace ID $ws7" && echo "$ws7")
+o8=$(hyprctl workspaces | grep -q "workspace ID $ws8" && echo "$ws8")
+o9=$(hyprctl workspaces | grep -q "workspace ID $ws9" && echo "$ws9")
+
+# check if Focused
+f=$(hyprctl monitors | grep active | awk -F '[( )]+' '{print $4}')
+
+#
+#
+## set occupied workspaces
+if [ "$f" == "$ws1" ]; then
+    ic_1=""
+    btn_class_1="$un$o1$f active"
+    occ_class_1=""
+elif [ "$o1" ]; then
+    ic_1=""
+    btn_class_1=""
+    occ_class_1="$o1 rest"
+else
+    ic_1=""
+    btn_class_1=""
+    occ_class_1=""
+fi
+
+if [ "$f" == "$ws2" ]; then
+    ic_2=""
+    btn_class_2="$un$o2$f active"
+    occ_class_2=""
+elif [ "$o2" ]; then
+    ic_2=""
+    btn_class_2=""
+    occ_class_2="$o2 rest"
+else
+    ic_2=""
+    btn_class_2=""
+    occ_class_2=""
+fi
+
+if [ "$f" == "$ws3" ]; then
+    ic_3=""
+    btn_class_3="$un$o3$f active"
+    occ_class_3=""
+elif [ "$o3" ]; then
+    ic_3=""
+    btn_class_3=""
+    occ_class_3="$o3 rest"
+else
+    ic_3=""
+    btn_class_3=""
+    occ_class_3=""
+fi
+
+if [ "$f" == "$ws4" ]; then
+    ic_4=""
+    btn_class_4="$un$o4$f active"
+    occ_class_4=""
+elif [ "$o4" ]; then
+    ic_4=""
+    btn_class_4=""
+    occ_class_4="$o4 rest"
+else
+    ic_4=""
+    btn_class_4=""
+    occ_class_4=""
+fi
+#
+#💬
+if [ "$f" == "$ws5" ]; then
+    ic_5=""
+    btn_class_5="$un$o5$f active"
+    occ_class_5=""
+elif [ "$o5" ]; then
+    ic_5=""
+    btn_class_5=""
+    occ_class_5="$o5 rest"
+else
+    ic_5=""
+    btn_class_5=""
+    occ_class_5=""
+fi
+
+if [ "$f" == "$ws6" ]; then
+    ic_6=""
+    btn_class_6="$un$o6$f active"
+    occ_class_6=""
+elif [ "$o6" ]; then
+    ic_6=""
+    btn_class_6=""
+    occ_class_6="$o6 rest"
+else
+    ic_6=""
+    btn_class_6=""
+    occ_class_6=""
+fi
+
+#
+if [ "$f" == "$ws7" ]; then
+    ic_7=""
+    btn_class_7="$un$o7$f active"
+    occ_class_7=""
+elif [ "$o7" ]; then
+    ic_7=""
+    btn_class_7=""
+    occ_class_7="$o7 rest"
+else
+    ic_7=""
+    btn_class_7=""
+    occ_class_7=""
+fi
+
+
+
+if [ "$f" == "$ws8" ]; then
+    ic_8=""
+    btn_class_8="$un$o8$f active"
+    occ_class_8=""
+elif [ "$o8" ]; then
+    ic_8=""
+    btn_class_8=""
+    occ_class_8="$o8 rest"
+else
+    ic_8=""
+    btn_class_8=""
+    occ_class_8=""
+fi
+
+if [ "$f" == "$ws9" ]; then
+    ic_9=""
+    btn_class_9="$un$o9$f active"
+    occ_class_9=""
+elif [ "$o9" ]; then
+    ic_9=""
+    btn_class_9=""
+    occ_class_9="$o9 rest"
+else
+    ic_9=""
+    btn_class_9=""
+    occ_class_9=""
+fi
+
+
+# output eww widget
+# Switched orientation to \"v\" from \"h\"
+echo "(box :class \"workspace\" :orientation \"v\" :spacing 40 :space-evenly \"false\" \
+	(button :onclick \"hyprctl dispatch workspace $ws1\" :class \"$btn_class_1 $occ_class_1 \" \"$ic_1\") \
+	(button :onclick \"hyprctl dispatch workspace $ws2\" :class \"$btn_class_2 $occ_class_2 \" \"$ic_2\") \
+	(button :onclick \"hyprctl dispatch workspace $ws3\" :class \"$btn_class_3 $occ_class_3 \" \"$ic_3\") \
+	(button :onclick \"hyprctl dispatch workspace $ws4\" :class \"$btn_class_4 $occ_class_4 \" \"$ic_4\") \
+	(button :onclick \"hyprctl dispatch workspace $ws5\" :class \"$btn_class_5 $occ_class_5 \" \"$ic_5\") \
+	(button :onclick \"hyprctl dispatch workspace $ws6\" :class \"$btn_class_6 $occ_class_6 \" \"$ic_6\") \
+	(button :onclick \"hyprctl dispatch workspace $ws7\" :class \"$btn_class_7 $occ_class_7 \" \"$ic_7\") \
+	(button :onclick \"hyprctl dispatch workspace $ws8\" :class \"$btn_class_8 $occ_class_8 \" \"$ic_8\") \
+	(button :onclick \"hyprctl dispatch workspace $ws9\" :class \"$btn_class_9 $occ_class_9 \" \"$ic_9\") \
+      )"
+}
+
+workspaces
+socat -u UNIX-CONNECT:/tmp/hypr/"$HYPRLAND_INSTANCE_SIGNATURE"/.socket2.sock - | while read -r event; do 
+workspaces "$event" 
+done

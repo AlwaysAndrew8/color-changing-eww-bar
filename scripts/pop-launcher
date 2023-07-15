@@ -1,0 +1,28 @@
+#!/bin/sh
+
+launcher() {
+    LOCK_FILE_LAUNCHER="/home/$USER/.cache/eww-launcher.lock"
+
+run() {
+    	cd /home/$USER/eww/target/release/
+	./eww open launchermenu -c /home/$USER/.config/eww/
+	cd
+}
+
+# Open widgets
+if [[ ! -f "$LOCK_FILE_LAUNCHER" ]]; then
+    cd /home/$USER/eww/target/release/
+    ./eww open launchermenu -c /home/$USER/.config/eww/
+    cd
+    touch "$LOCK_FILE_LAUNCHER"
+    run && echo "ok good!"
+elif [[ -f "$LOCK_FILE_LAUNCHER" ]]; then
+#was "tilda/Documents/eww/bar/"
+    cd /home/$USER/eww/target/release/
+    ./eww close launchermenu
+    cd
+    rm "$LOCK_FILE_LAUNCHER" && echo "closed"
+fi
+}
+
+launcher

@@ -1,0 +1,19 @@
+#!/bin/sh
+
+#{{ duration(mpris:length - position) }}
+
+get_rtime ()
+{
+    get_rtime=$(playerctl metadata --format "{{ duration(position) }} / {{ duration(mpris:length) }}")
+    if [ -z $(playerctl metadata title) ]; then
+    echo ""
+    else
+	echo "$get_rtime"
+    fi
+}
+
+
+
+if [[ "$1" == "--need_time" ]]; then
+	get_rtime
+fi

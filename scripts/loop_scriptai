@@ -1,0 +1,22 @@
+#!/bin/bash
+   
+   toggle_loop_setting()
+   {
+       current_setting=$(playerctl loop)
+   
+       if [ "$current_setting" = "None" ]; then
+           playerctl loop playlist
+           echo "B"
+       elif [ "$current_setting" = "Playlist" ]; then
+           playerctl loop none
+           echo "A"
+       else
+           echo "Error: unknown loop setting ($current_setting)"
+       fi
+   }
+   
+   if [[ "$1" == "--loop" ]]; then
+       toggle_loop_setting
+   else
+       echo "Error: invalid argument ($1)"
+   fi

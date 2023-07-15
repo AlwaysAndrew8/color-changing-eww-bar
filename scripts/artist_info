@@ -1,0 +1,18 @@
+#!/bin/sh
+
+
+get_artist ()
+{
+	get_artist=$(playerctl metadata --format "by {{ artist }}")
+    if [ -z $(playerctl metadata title) ]; then
+	echo ""
+    else
+	echo "$get_artist"
+    fi
+}
+
+
+
+if [[ "$1" == "--artist" ]]; then
+	get_artist
+fi
