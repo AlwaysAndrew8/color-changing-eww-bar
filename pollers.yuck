@@ -1,0 +1,18 @@
+; polls
+(defpoll time0 :interval "10s"  "date '+%H':%M")
+(defpoll date :interval "10s"  "date '+%m/%d'")
+(defpoll memory :interval "15s" "/home/$USER/.config/eww/scripts/memory")
+(defpoll cpu :interval "15s" "/home/$USER/.config/eww/scripts/cpu")
+
+(defpoll volume_percent :interval "3s" "amixer -D pulse sget Master | grep 'Left:' | awk -F'[][]' '{ print $2 }' | tr -d '%'")
+(defpoll mic_percent :interval "3s" "amixer -D pulse sget Capture | grep 'Mono:' | awk -F'[][]' '{ print $2 }' | tr -d '%'")
+
+(defpoll    brightness  :interval "3s" :initial "{}" `home/$USER/.config/eww/scripts/brightness get`)
+
+(defpoll song_artist :interval "100ms"  "/home/$USER/.config/eww/scripts/music_info --song")
+(defpoll artist :interval "100ms"   "/home/$USER/.config/eww/scripts/artist_info --artist")
+(defpoll rtime :interval "100ms"   "/home/$USER/.config/eww/scripts/rtime_script --need_time")
+(defpoll song_status :interval "100ms"  "/home/$USER/.config/eww/scripts/music_status --status")
+(defpoll loopy :interval "100ms"  "/home/$USER/.config/eww/scripts/loop_script --loop")
+
+(defpoll ws :interval "1ms" "/home/$USER/.config/eww/scripts/workspace")

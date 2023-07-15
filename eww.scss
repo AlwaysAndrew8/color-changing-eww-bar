@@ -1,0 +1,551 @@
+@import '/home/$USER/.cache/wal/colors.scss';
+
+    /*color: #D9E0EE;*/
+
+
+/*
+hover - 0.8
+active - 0.5
+*/
+
+$primary_font: JetBrains Mono;
+
+$secondary_font: VictorMono Nerd Font Mono;
+
+/*was $color6*/
+$primary: $color4;
+
+$secondary: $color2;
+
+$bg: rgba($color0,0.8);
+
+/* workspaces */
+$unfoccws: rgba($primary,0.2);
+
+$unoccws:  rgba($primary,0.1);
+
+$unocchoverws: rgba($color2,0.5);
+
+
+/* unf = unfocused
+ occ = occupied
+unocc = unoccupied
+ws = workspace */
+
+
+
+*
+{
+    all: unset;
+
+}
+
+/*--------------------------------------------------*/
+/*------------------- Separator -------------------*/
+/*--------------------------------------------------*/
+
+.sepbar
+{
+    color: violet;
+    color: rgba($primary, 1);
+    font-family: $secondary_font;
+    font-size: 24px;
+}
+
+/* tooltip */
+tooltip
+{
+    background-color: $bg;
+    font-family: $primary_font;
+    font-size: 12px;
+    border-radius: 15px;
+}
+
+/*--------------------------------------------------*/
+/*----------------------- Bar -----------------------*/
+/*--------------------------------------------------*/
+.bar
+{
+    background-color: $bg;
+    border-radius: 15px;
+    /*border was 0.93*/
+    border: 1px solid rgba($primary, 0.93);
+    border-color: $primary $secondary $secondary $primary;
+}
+
+/*--------------------------------------------------*/
+/*---------------------- Time ----------------------*/
+/*--------------------------------------------------*/
+.time-cpu-mem
+{
+}
+.time-label2
+{
+    color: #D9E0EE;
+    /*color: #ffffff;*/
+    font-family: $primary_font;
+    font-size: 18px;
+    color: $primary;
+
+}
+
+.time-label1 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #D9E0EE;
+    color: $secondary;
+}
+
+/*--------------------------------------------------*/
+/*------------------ Memory & CPU ------------------*/
+/*--------------------------------------------------*/
+.mem
+{
+    color: $color9;
+    background-color: #302D41;
+    border-radius: 10px;
+}
+.cpu
+{
+    color: $color6;
+    background-color: #302D41;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+.cpu-and-mem
+{
+    margin-top: 20px;
+    /*background-color: $bg;*/
+    border-radius: 16px;
+}
+
+/*--------------------------------------------------*/
+/*$primary_font: JetBrains Mono;
+
+$secondary_font: VictorMono Nerd Font Mono;
+
+$primary: #9EA3F5;
+
+$secondary: orange;
+
+$bg: #161320;
+
+workspaces
+$unfoccws: #ffffff;
+
+$unoccws:  #444444;
+
+$unocchoverws: gray;
+*/
+
+/* unf = unfocused
+ occ = occupied
+unocc = unoccupied
+ws = workspace */
+
+/*--------------------- Volume ---------------------*/
+/*--------------------------------------------------*/
+
+.vol
+{
+}
+.vol-icon
+{
+    margin-top: 25px;
+    /* was 20px*/
+    font-size: 25px;
+    color: $secondary;
+}
+
+.vol-icon:hover
+{
+    
+    color: rgba($secondary,0.8);
+}
+
+.volbar trough highlight
+{
+    background-color: $primary;
+    border-radius: 10px;
+}
+
+.volbar:hover trough highlight
+{
+
+    background-color: rgba($primary,0.8);
+}
+
+scale trough
+{
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #302D41;
+    min-height: 100px;
+    min-width: 10px;
+}
+
+/*--------------------------------------------------*/
+/*--------------------- Power ---------------------*/
+/*--------------------------------------------------*/
+
+.power-icon
+{
+    color: #F28FAD;
+    font-size: 20px;
+    padding: 0px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    font-family: $secondary_font;
+
+}
+
+.power-icon:active
+{
+    color: #45081a;
+}
+
+/* music */
+
+
+/*--------------------------------------------------*/
+/*---------------- Launcher (Music) ----------------*/
+/*--------------------------------------------------*/
+.music-artist
+{
+    color: $primary;
+    font-family: $primary_font;
+    font-size: 16px;
+    margin-bottom: 20px;
+
+}
+
+
+.listening
+{
+
+    font-family: $primary_font;
+    color: #D9E0EE;
+    /*color: violet;*/
+    font-size: 18px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 25px;
+}
+
+.music-label
+{
+    font-family: $primary_font;
+    font-size: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: $secondary;
+    margin-top: 25px;
+}
+
+.rtime {
+    margin-top: 12px;
+    font-family: $primary_font;
+    font-size: 20px;
+    color: $primary;
+}
+
+
+.loop {
+    margin-top: 10px;
+    font-size: 20px;
+    color: $primary;
+}
+.loop button:hover {
+    color: rgba($primary,0.8);
+}
+.loop button:active {
+    color: rgba($primary,0.5);
+}
+.song_btn_prev
+{
+    /*color: #D9E0EE; */
+    font-family: $primary_font;
+    font-size: 30px;
+    margin-left: 0px;
+}
+
+.song_btn_play
+{
+
+    font-family: $primary_font;
+    font-size: 20px;
+    margin-left: 38px;
+    color: $primary;
+}
+
+.song_btn_play:hover
+{
+    color: rgba($primary,0.8);
+}
+
+.song_btn_play:active
+{
+    color: rgba($primary,0.5);
+}
+
+.song_btn_next
+{
+    /*color: #D9E0EE;*/
+    font-family: $primary_font;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.song_btn_next,
+.song_btn_play,
+.song_btn_prev
+{
+    margin-top: 20px;
+}
+
+.song_btn_next,
+.song_btn_prev
+{
+    color: $secondary;
+}
+
+.song_btn_next:hover,
+.song_btn_prev:hover
+{
+    color: rgba($secondary,0.8);
+}
+
+.song_btn_next:active,
+.song_btn_prev:active
+{
+    color: rgba($secondary,0.5);
+}
+
+
+/*--------------------------------------------------*/
+/*------------------- Workspaces -------------------*/
+/*--------------------------------------------------*/
+
+.workspace .active
+{
+    color: $primary;
+
+}
+/*.workspace .occwo {
+    color: #F5C2E7;
+}*/
+
+
+
+.workspace .rest {
+    color: $unfoccws;
+    color: rgba($secondary,0.6);
+}
+
+.workspace
+{
+    font-size: 30px;
+    color: $unoccws;
+}
+
+
+.workspace button.active:hover {
+    /*color: $primary;*/
+    color: #e977c9;
+    color: #cc8400;
+    color: rgba($primary,0.8);
+}
+.workspace button.rest:hover
+{
+    /*color: #F5C2E7;*/
+    color: rgba($primary,0.8);
+}
+
+.workspace button:hover {
+    color: $unocchoverws;
+}
+
+/*--------------------------------------------------*/
+/*--------------------- Power ---------------------*/
+/*--------------------------------------------------*/
+
+.power-icon
+{
+    font-family: $primary_font;
+    font-size: 20px;
+    color: #F28FAD;
+}
+
+.lock-btn
+{
+    color: #ffffff;
+    font-family: $primary_font;
+    font-size: 50px;
+}
+
+.lock-btn:hover
+{
+    color: #F28FAD;
+    font-family: $primary_font;
+    font-size: 50px;
+}
+
+.sleep-btn
+{
+    color: #ffffff;
+    font-family: $primary_font;
+    font-size: 50px;
+}
+
+.sleep-btn:hover
+{
+    color: #F28FAD;
+    font-family: $primary_font;
+}
+
+.power-btn
+{
+    color: #ffffff;
+    font-family: $primary_font;
+    font-size: 50px;
+}
+
+.power-btn:hover
+{
+    color: #F28FAD;
+    font-family: $primary_font;
+    font-size: 50px;
+}
+
+.restart-btn
+{
+    color: #ffffff;
+    font-family: $primary_font;
+    font-size: 50px;
+}
+
+.restart-btn:hover
+{
+    color: #F28FAD;
+    font-family: $primary_font;
+    font-size: 50px;
+}
+
+.powermenu
+{
+    background-color: $bg;
+    border: 1px solid rgba($primary, 0.93);
+    border-radius: 15px;
+}
+
+/*--------------------------------------------------*/
+/*---------------------- Menu ----------------------*/
+/*--------------------------------------------------*/
+
+.menu-box
+{
+    margin-right: 5px;
+    font-size: 30px;
+}
+
+/*--------------------------------------------------*/
+/*-------------------- Launcher --------------------*/
+/*--------------------------------------------------*/
+
+.launchermenu
+{
+    background-color: $bg;
+    border: 1px solid rgba($primary, 0.93);
+    border-radius: 15px;
+}
+
+
+/* PFP */
+.launcher-icon
+{
+    color: #ffffff;
+    margin-left: 10px;
+    background-color: $primary;
+    border-radius: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+/* ARCH LOGO */
+.launcher-icon2
+{
+    color: #2893C8;
+    margin-bottom: 0px;
+    color: $primary;
+}
+
+/* ARCH LOGO */
+.launcher-icon2:active
+{
+    color: #103b50;
+    color: rgba($primary,0.5);
+}
+
+
+.launcher-pfp-label
+{
+    font-family: $primary_font;
+    font-size: 30px;
+    margin-left: 10px;
+    color: $primary;
+}
+
+.launcher-pfp-label2
+{
+    font-family: $primary_font;
+    font-size: 20px;
+    margin-left: 10px;
+    color: $secondary;
+}
+
+.launcher-btn
+{
+    margin-top: 50px;
+    color: #ffffff;
+    font-family: $primary_font;
+    font-size: 50px;
+}
+
+.launcher-btn:hover
+{
+    color: $color15;
+    font-family: $primary_font;
+    font-size: 50px;
+}
+
+
+
+/*
+
+original values
+
+$primary_font: JetBrains Mono;
+
+$secondary_font: VictorMono Nerd Font Mono;
+
+$primary: #9EA3F5;
+
+$secondary: orange;
+
+$bg: #161320;
+
+workspaces
+$unfoccws: #ffffff;
+
+$unoccws:  #444444;
+
+$unocchoverws: gray;
+*/
+
+/* unf = unfocused
+ occ = occupied
+unocc = unoccupied
+ws = workspace */
+

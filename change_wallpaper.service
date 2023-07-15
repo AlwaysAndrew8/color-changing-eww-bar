@@ -1,0 +1,6 @@
+[Unit]
+Description=Change Wallpaper
+
+[Service]
+ExecStart=/home/$USER/change_wallpaper.sh
+

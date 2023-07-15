@@ -1,0 +1,5 @@
+; vars
+(defvar hover_vol false)
+(defvar hover_mic false)
+(defvar hover_mus false)
+(defvar eww "/home/$USER/eww/target/release/eww -c /home/$USER/.config/eww")

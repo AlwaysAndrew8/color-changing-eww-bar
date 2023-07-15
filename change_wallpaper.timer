@@ -1,0 +1,10 @@
+[Unit]
+Description=Run change_wallpaper.service every 60 minutes
+
+[Timer]
+OnBootSec=10s
+OnUnitActiveSec=60min
+Unit=change_wallpaper.service
+
+[Install]
+WantedBy=timers.target
