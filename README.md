@@ -1,5 +1,6 @@
 # color-changing-eww-bar
-INCOMPLETE, will post files sometime this week
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/RsPVPQQ" data-context="false" ><a href="//imgur.com/a/RsPVPQQ"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 I use the Hyprland Desktop environment. This is an eww bar that changes color to match your wallpaper!
 
