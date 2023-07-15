@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "Starting to watch SCSS files..."
+
+timeout 1 sass --watch /home/$USER/.config/eww/eww.scss:/home/$USER/.config/eww/eww.scss.scss
+
+
