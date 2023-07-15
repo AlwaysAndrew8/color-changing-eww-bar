@@ -124,11 +124,11 @@ monitor=,addreserved,0,0,91,0
 ```
 
 # Images
-[!woman with hat near butterfly](https://github.com/AlwaysAndrew8/color-changing-eww-bar/blob/main/20230715_12h47m53s_grim.png)
-[!woman laying](https://github.com/AlwaysAndrew8/color-changing-eww-bar/blob/main/20230715_12h48m53s_grim.png)
-[!woman with pink hair](https://github.com/AlwaysAndrew8/color-changing-eww-bar/blob/main/20230715_12h49m12s_grim.png)
-[!woman_with_pink_umbrella](https://github.com/AlwaysAndrew8/color-changing-eww-bar/blob/main/girl_umbrella_pink.png)
-[!power icons](https://github.com/AlwaysAndrew8/color-changing-eww-bar/blob/main/power_icons.png)
+![woman with hat near butterfly](https://github.com/AlwaysAndrew8/color-changing-eww-bar/blob/main/20230715_12h47m53s_grim.png)
+![woman laying](https://github.com/AlwaysAndrew8/color-changing-eww-bar/blob/main/20230715_12h48m53s_grim.png)
+![woman with pink hair](https://github.com/AlwaysAndrew8/color-changing-eww-bar/blob/main/20230715_12h49m12s_grim.png)
+![woman_with_pink_umbrella](https://github.com/AlwaysAndrew8/color-changing-eww-bar/blob/main/girl_umbrella_pink.png)
+![power icons](https://github.com/AlwaysAndrew8/color-changing-eww-bar/blob/main/power_icons.png)
 
 # Credit
 Thank you to [elkowar](https://github.com/elkowar) for making eww, [okklol](https://github.com/okklol/eww-bar) for what I started with as my eww bar,  [the Hypr Development Team](https://github.com/hyprwm): [Vaxry](https://github.com/vaxerski), [Fufexan](https://github.com/fufexan), [ThatOneCalculator](https://github.com/ThatOneCalculator) - and [all contributors](https://github.com/hyprwm/Hyprland/graphs/contributors) for making/contributing to the really awesome and cool desktop environment hyprland. Thank you to [dylanaraps](https://github.com/dylanaraps) for pywal and neofetch.
