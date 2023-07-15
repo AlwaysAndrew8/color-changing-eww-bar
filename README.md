@@ -122,4 +122,4 @@ monitor=,addreserved,0,0,91,0
 ```
 
 # Credit
-Thank you to [elkowar](https://github.com/elkowar) for making eww, [okklol](https://github.com/okklol/eww-bar) for what I started with as my eww bar,  [the Hypr Development Team](https://github.com/hyprwm): [Vaxry](https://github.com/vaxerski), [Fufexan](https://github.com/fufexan), [ThatOneCalculator](https://github.com/ThatOneCalculator) - and [all contributors](https://github.com/hyprwm/Hyprland/graphs/contributors) for making/contributing to the really awesome and cool desktop environment hyprland.
+Thank you to [elkowar](https://github.com/elkowar) for making eww, [okklol](https://github.com/okklol/eww-bar) for what I started with as my eww bar,  [the Hypr Development Team](https://github.com/hyprwm): [Vaxry](https://github.com/vaxerski), [Fufexan](https://github.com/fufexan), [ThatOneCalculator](https://github.com/ThatOneCalculator) - and [all contributors](https://github.com/hyprwm/Hyprland/graphs/contributors) for making/contributing to the really awesome and cool desktop environment hyprland. Thank you to [dylanaraps](https://github.com/dylanaraps) for pywal and neofetch.
