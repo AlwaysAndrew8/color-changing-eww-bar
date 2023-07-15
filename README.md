@@ -1,6 +1,8 @@
 # color-changing-eww-bar
 
 
+![girl with leashed dog](https://github.com/AlwaysAndrew8/color-changing-eww-bar/blob/main/20230715_12h47m03s_grim.png)
+
 I use the Hyprland Desktop environment. This is an eww bar that changes color to match your wallpaper!
 
 :) Hopefully what I type makes sense!
