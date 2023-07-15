@@ -36,10 +36,6 @@ Example:
 - [playerctl](https://github.com/altdesktop/playerctl)^5
   (That should be it, will add if I recall any)
 
-# Installation
-(will add when I put files in)
-
-# Guide
 <details>
   <summary>Note on what may need to change if you don't use certain pre-requisites</summary>
 ^1: There are several different downloads from ALSA, I have alsa-oss, alsa-utils, alsa-lib, alsa-plugs, and alsa-ucm-conf. You may only neeed alsa-lib or something. If you don't want to use ALSA, the volume may not work. If you use another type of audio, consider adjusting that to whatever audio you use. It's under pollers.yuck.
@@ -50,6 +46,13 @@ If you don't use...
 ^4: Hyprland, the workspaces may not work. This can be adjusted by changing hyprctl for workspaces to whatever you use.
 ^5: playerctl, pause, play, loop, and play next/play last may not work.
 </details>
+
+# Installation
+(will add when I put files in)
+
+
+# Guide
+
 
 <details>
   <summary>1. Download Pywal</summary>
