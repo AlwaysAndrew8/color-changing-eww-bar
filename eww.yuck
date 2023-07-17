@@ -13,6 +13,7 @@
 (defwindow bar
     :monitor 0
     :windowtype "dock"
+    :stacking "bottom"
     :geometry (geometry :x "15px"
                         :y "0%"
                         :width "2%"
