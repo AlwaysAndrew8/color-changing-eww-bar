@@ -6,15 +6,6 @@
 I use the Hyprland Desktop environment. This is an eww bar that changes color to match your wallpaper!
 
 :) Hopefully what I type makes sense!
-
-<details>
-  <summary>⚠️ Important note if reloading eww bar colors in actual (not tiled) full-screen ⚠️</summary>
-
-  Full screen usage makes it so that the eww bar will surface on top due to it reloading the colors for the wallpaper, I'm unsure if this is possible to change, but switching workspaces will put it back down beneath. I rarely use full-screen (like actual full-screen, not tiled) and when it does pop up, it doesn't usually block anything important in the games I play. But be warned.
-  
-  This isn't an issue if you change wallpapers only when the computer starts up, and never when in full-screen, as then the eww-bar never reloads while on. Actually, after writing this, I may just adjust my personal wallpapers to only change on computer startup... that would be smart. This would negate the need for my systemd/Timer :D EDIT: Ended up just changing wallpaper on startup. Works nicely.
-</details>
-
 <details>
   <summary>If you already have your own eww bar and just want the colors</summary>
   
